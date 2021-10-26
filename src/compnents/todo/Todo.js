@@ -73,7 +73,7 @@ const Todo = () => {
           fullWidth
           onChange={handleChange}
           id="todoList"
-          label="TodoList"
+          label="Add Task"
           value={todo}
         />
 

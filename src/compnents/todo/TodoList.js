@@ -16,21 +16,24 @@ const TodoList = (props) => {
         <Typography style={{ float: "left" }}>
           <li style={{ listStyle: "none" }}>{props.text}</li>
         </Typography>
-        <Button
-          style={{ marginLeft: "38vw" }}
-          onClick={() => {
-            props.onEdit(props.id);
-          }}
-        >
-          <EditIcon />
-        </Button>
-        <Button
-          onClick={() => {
-            props.onSelect(props.id);
-          }}
-        >
-          <DeleteIcon />
-        </Button>
+        <div style={{ float: "right" }}>
+          <Button
+            // style={{ float: "right" }}
+            onClick={() => {
+              props.onEdit(props.id);
+            }}
+          >
+            <EditIcon />
+          </Button>
+          <Button
+            // style={{ float: "right" }}
+            onClick={() => {
+              props.onSelect(props.id);
+            }}
+          >
+            <DeleteIcon />
+          </Button>
+        </div>
       </div>
     </>
   );
