@@ -17,7 +17,7 @@ const TodoList = (props) => {
           <li style={{ listStyle: "none" }}>{props.text}</li>
         </Typography>
         <Button
-          style={{ alignSelf: "flex-end" }}
+          style={{ marginLeft: "38vw" }}
           onClick={() => {
             props.onEdit(props.id);
           }}

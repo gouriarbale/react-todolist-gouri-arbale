@@ -20,7 +20,7 @@ const Todo = () => {
       setItem((olditems) => {
         return [...olditems, allInputData];
       });
-      setTodo("");
+      setTodo(" ");
     } else {
       setItem(
         items.map((ele) => {
@@ -61,7 +61,6 @@ const Todo = () => {
   };
   return (
     <>
-      <h1>Todo</h1>
       <Grid
         style={{ display: "flex", alignContent: "center", marginBottom: 20 }}
         item
